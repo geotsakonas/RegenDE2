@@ -1,4 +1,4 @@
-## AZURE CLOUD AND DATA FACTORY CREATION PROCEDURE
+## AZURE CLOUD MIGRATION PROCEDURE
 
 ### SQL Server & Database Creation
 
@@ -45,22 +45,3 @@
 
 ![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Connect%20On-Premises%20with%20Azure%20and%20Database%20Retosring/Step%205_Restored%20Databases%20on%20Azure%20cloud.png)
 
-### Data Factory & ETL
-
-***1st Step: Get Link with Azure SQL Server***
-
-![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Data%20Factory%20for%20ETL/Step%201_Linked%20with%20Azure%20SQL%20Server.png)
-
-***2nd Step: Choose Darabase Name and Link with the database we want***
-
-![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Data%20Factory%20for%20ETL/Step%201.1_Choose%20Darabase%20Name%20and%20Link%20with%20the%20database%20we%20want.png)
-
-![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Data%20Factory%20for%20ETL/Step%201.2.png)
-
-***3nd Step: Create the Link Testing***
-
-![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Data%20Factory%20for%20ETL/Step%202_Create%20Link%20Srvice.png)
-
-***4th Step: Create Pipeline in Data Factory***
-
-![alt text](https://github.com/geotsakonas/RegenDE2/blob/main/Azure%20Migration%20Steps/Data%20Factory%20for%20ETL/Step%202_Create%20Pipeline%20in%20Data%20Factory.png)
