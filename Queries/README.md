@@ -1,14 +1,10 @@
-STAGE 1
-First We Restore The Database Chiinok2021 and Chinook2022 ( .bak files )
+1_Chinook_DataWarehouse_Staging.sql this script creates a staging database from the OLTP
 
-STAGE 2
-Using the sql code from 1_Chinook_DataWarehouse_Staging.sql we create the staging Database and load it with the data from the OLTP database so we dont use it anymore
+2_Chinook_DataWarehouse_CreatingDWTables.sql creates the datawarehouse with the tables but with no data
 
-STAGE 3
-We used the sql code from 2_Chinook_DataWarehouse_CreatingDWTables.sql to create the datawarehouse
+3_Chinook_DataWarehouse_DimDate.sql adds the dimdate data to datawarehouse
 
-STAGE 4
-We have to load data for the first load to our datawarehouse and we achieved that by using the code from 4_Chinook_DataWarehouse_LoadData.sql 
+4_Chinook_DataWarehouse_LoadData.sql we use this to load data from the staging database to datawarehouse
 
-STAGE 5
-We load the datawarehouse again with the extra data from Chinook2022 by using the code 5_Chinook_DataWarehouse_SCD.sql so we can compare and use them to our pipeline
+5_Chinook_DataWarehouse_SCD.sql with this script we load the data again with the slowly changing dimensions method
+
