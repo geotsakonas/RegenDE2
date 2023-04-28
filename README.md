@@ -3,7 +3,7 @@
 ## Database Restorage
 
 In the first stage, the Microsoft SQL Server Management Studio (MSSMS) was used to restore the project's chin2022 and chin2022 databases.
-The OLTP batabase is made up of Chin2021 and Chin2022.
+The OLTP database is created with the utilization of chin2021 and chin2022.
 
 ## Data Warehouse (Star/Snowflake)
 
