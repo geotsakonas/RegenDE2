@@ -16,7 +16,7 @@ In addition we created the DataWarehouse (ChinookDW) database which will be our 
 
 In the third stage we loaded the staging database and the data warehouse database (queries no.4 and no.5).
 
-First, we load data from the Chinook2021 database into the DataWarehouse (question #4).
+First, we load data from the Chinook2021 database into the DataWarehouse (querie no.4).
 Following that, the data warehouse database is updated with additional data from Chinook2022 database (querie no.5) for comparison and inclusion in the pipeline.
 
 ## Azure Data Facroty ETL
