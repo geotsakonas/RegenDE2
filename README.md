@@ -7,25 +7,26 @@ The OLTP database is created with the utilization of chin2021 and chin2022.
 
 ## Data Warehouse (Star/Snowflake)
 
-In the second stage a staging database (ChinookStaging) is constructed so that it is possible to transfer data from the OLTP database and perform the ETL process.
-This phase is required since the adjustments that will be performed should not overload OLTP.
+In the second stage we developed a staging database (ChinookStaging) in order for the data to be transferred from the OLTP database and perform the ETL process.
+This phase is required since the adjustments that will be performed, they should also not overload OLTP.
 
-In addition the DataWarehouse (ChinookDW) database is created which will be the final database and a dimension table (DimDate) with the dates that will be included in the final Data Warehouse (ChinookDW).
+Additionally, we created the DataWarehouse (ChinookDW) database which will be the final one. Moreover, a dimension table (DimDate) is developed with the dates included in the final Data Warehouse (ChinookDW).
 
 ## Data Warehouse Load
 
-In the third stage the staging database is loaded and the data warehouse database (queries no.4 and no.5).
+During the third stage we loaded the staging database and the data warehouse database (queries no.4 and no.5).
 
-First, the data from the Chinook2021 databaseare loaded into the DataWarehouse (querie no.4).
-Following that, the data warehouse database is updated with additional data from Chinook2022 database (querie no.5) for comparison and inclusion in the pipeline.
+As a first step, we loaded data from the Chinook2021 database into the DataWarehouse (query no4).
+
+Following that, the data warehouse database is updated with additional data from Chinook2022 database (query no.5) for comparison and inclusion in the pipeline.
 
 ## Azure Data Facroty ETL
 
-After the ETL process on MSSMS is completed, thr process continues in the Azure Cloud.
+After completing the ETL process on MSSMS, we continued it in Azure Cloud.
 
-In this process, two approaches are handled.
+During this process, we used two approaches.
 
-The first method was to create a pipeline with the Data Factory (ETL folder) and the second option was to link the Azure Cloud Server to the on-premises server and complete the migration through MSSMS (Azure Migration folder).
+The first method is aimed at the creation of a pipeline with the Data Factory (ETL folder) and the second option aimed at the link of the Azure Cloud Server to our on-premises server and completing the migration through MSSMS (Azure Migration folder).
 
 ## Power BI Report
 
